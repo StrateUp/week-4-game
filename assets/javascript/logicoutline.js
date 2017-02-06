@@ -37,8 +37,8 @@ function getRandomIntInclusive(min, max) {
 		//-random values generated and assigned to the button
 			//create one object w/ 4 buttons inside or 4 objects with overarching "rules"??
 var Buttons ={
-	valueOptions: "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12", //rand(1, 12),// 
-	item: valueOptions[Math.floor(Math.random()*valueOptions.length)];
+	valueOptions: ["1","2","3","4","5","6","7","8","9","10","11","12"], //rand(1, 12),// 
+	item: valueOptions[Math.floor(Math.random()*valueOptions.length)],
 	//rand: function(min, max) {
   		//var offset = min;
   		//var range = (max - min) + 1;
@@ -79,8 +79,36 @@ console.log("button value:" + item);
 			//generate new value computerGuess
 			//-reassign new values to the player option buttons 
 
-  
+  var game = {
+ 	goalAmount: 0,
+ 	playerAmount: 0,
+ 	setRandomGoalAmount: getRandomIntInclusive(19, 120),
+ 		getRandomIntInclusive: function(min, max){
+ 			min = Math.ceil(min);
+  			max = Math.floor(max);
+  			return Math.floor(Math.random() * (max - min + 1)) + min;
+ 		},
+ 	
+ 	updatePlayerAmount: function(value) {
+       
+ 	},
+
+ 	checkGameStatus: function() {
+
+ 	},
+
+ 	reset: function() {}
+	};
+
+
+//event listeners//
+$("#ranNum").html(this.setRandomGoalAmount);
+console.log(game.setRandomGoalAmount);
 
 
 
+ $(".number").on("click", function(){});
 
+var buttons ={
+
+};
