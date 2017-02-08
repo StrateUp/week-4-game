@@ -1,13 +1,9 @@
 
-
-#gentoo
-{
-    background-image: url(../images/gentoo.jpeg);   
-    background-repeat: no-repeat; 
-    border: none;    
+img[alt="btn1"] img[alt="btn2"] img[alt="btn3"]{
+	width:10px;
+	height:10px;
+	margin: 5px;
+	border:0;
+	display: inline-block;
 }
 
-#adelie{
-	background-image: url(../images/adelie.jpeg);
-	border: none;
-}
