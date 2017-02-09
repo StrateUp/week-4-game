@@ -62,14 +62,13 @@ $("#ranNum").html(" " +computerGuess);
 
   
   $(":button").on("click", function(){
-  	$("#userTotal").html(buttons.gentoo, buttons.adelie, buttons.humboldt, buttons.emperor);
-
+  	$("#userTotal").html("data-value");
   });
-
+//
   playerTotal += parseInt($(this).data("value"));
 		 console.log(playerTotal);
 		console.log("User Score after 1st click is: " + playerTotal);
-
+});
 
 // Check if the user score is >= Match-Target
 		if (playerTotal === computerGuess) {
@@ -90,4 +89,5 @@ $("#ranNum").html(" " +computerGuess);
 			
 			game.initialize();
 		}
+
 });
